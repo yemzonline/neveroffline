@@ -1,0 +1,36 @@
+:root{
+/* families */
+--font-display:"Anton","Arial Narrow",system-ui,sans-serif;
+--font-body:"Archivo",system-ui,-apple-system,sans-serif;
+--font-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+--font-terminal:var(--font-mono);
+--font-script:"Kaushan Script",cursive; /* substitution — see fonts.css */
+
+/* type scale — display (uppercase, skewed lockup energy) */
+--display-hero:clamp(56px,9vw,148px); /* @kind font */
+--display-1:clamp(44px,6vw,96px); /* @kind font */
+--display-2:clamp(34px,4.4vw,64px); /* @kind font */
+--display-3:clamp(26px,3vw,44px); /* @kind font */
+
+/* headings */
+--heading-1:32px;--heading-2:24px;--heading-3:19px;--heading-4:16px;
+
+/* body */
+--body-lg:18px;--body-md:15px;--body-sm:13px;--body-xs:11px;
+
+/* mono / data */
+--mono-lg:14px;--mono-md:12px;--mono-sm:11px;--mono-xs:10px;
+
+/* weights */
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;--weight-black:900;
+
+/* line heights */
+--leading-display:.86;--leading-tight:1.06;--leading-snug:1.28;--leading-body:1.55;--leading-loose:1.7;
+
+/* tracking */
+--track-display:-.02em;--track-tight:-.01em;--track-body:0; /* @kind other */
+--track-label:.14em;--track-mono:.06em;--track-wide:.28em;
+
+/* the brand skew — logo + hero type lean */
+--skew-brand:-7deg; /* @kind other */
+}

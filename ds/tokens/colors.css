@@ -1,0 +1,88 @@
+:root{
+/* ── Neon core ─────────────────────────────────────────────── */
+--neon-pink:#ff2e7e;--neon-pink-hot:#ff5c9c;--neon-pink-deep:#c4004f;
+--neon-violet:#8b2be2;--neon-violet-hot:#a75cff;--neon-violet-deep:#5a12a0;
+--neon-cyan:#00e5ff;--neon-cyan-hot:#5ef2ff;--neon-cyan-deep:#008fa3;
+--neon-lime:#4cff3c;--neon-lime-hot:#8bff80;--neon-lime-deep:#1fa813;
+--neon-amber:#ff8a00;
+--chrome-hi:#ffffff;--chrome-mid:#9299a4;--chrome-lo:#4a4e5e;
+
+/* ── Ink / concrete / steel neutrals ──────────────────────── */
+--ink-000:#000000;--ink-050:#07070a;--ink-100:#0b0b10;--ink-200:#12121a;
+--steel-300:#1c1d26;--steel-400:#262832;--steel-500:#343744;--steel-600:#4a4e5e;
+--concrete-500:#6b6f7c;--concrete-400:#9299a4;--concrete-300:#b9bfc9;
+--concrete-200:#d6dae0;--concrete-100:#eceef1;--paper:#f7f8fa;--white:#ffffff;
+--paper-muted:#e9e4da;--paper-warm:#f0ece6;--ink-print:#111014;
+
+/* ── Semantic: surfaces (dark is the default brand mode) ──── */
+--surface-page:var(--ink-050);
+--surface-raised:var(--ink-200);
+--surface-card:var(--steel-300);
+--surface-sunken:var(--ink-100);
+--surface-inverse:var(--paper);
+--surface-steel:linear-gradient(180deg,var(--steel-400) 0%,var(--steel-300) 100%);
+
+/* ── Semantic: text ──────────────────────────────────────── */
+--text-body:var(--concrete-200);
+--text-strong:var(--white);
+--text-muted:var(--concrete-400);
+--text-faint:var(--concrete-500);
+--text-inverse:var(--ink-100);
+--text-accent:var(--neon-pink);
+--text-link:var(--neon-cyan);
+--text-link-hover:var(--neon-cyan-hot);
+
+/* ── Semantic: lines ─────────────────────────────────────── */
+--line-hairline:rgba(255,255,255,.10);
+--line-strong:rgba(255,255,255,.24);
+--line-neon:var(--neon-violet);
+--line-focus:var(--neon-cyan);
+
+/* ── Semantic: interactive ───────────────────────────────── */
+--action-primary:var(--neon-pink);
+--action-primary-hover:var(--neon-pink-hot);
+--action-primary-press:var(--neon-pink-deep);
+--action-primary-text:var(--ink-050);
+--action-secondary:transparent;
+--action-secondary-line:var(--line-strong);
+--action-disabled:var(--steel-400);
+--action-disabled-text:var(--concrete-500);
+
+/* ── Semantic: status ────────────────────────────────────── */
+--status-live:var(--neon-pink);
+--status-online:var(--neon-lime);
+--status-queued:var(--neon-amber);
+--status-offline:var(--concrete-500);
+--status-error:var(--neon-pink);
+--status-info:var(--neon-cyan);
+}
+/* Light "print / concrete" scope — flyers, tickets, docs on paper */
+[data-nof-theme="concrete"]{
+--surface-page:var(--concrete-100);--surface-raised:var(--white);--surface-card:var(--white);
+--surface-sunken:var(--concrete-200);--surface-inverse:var(--ink-100);
+--text-body:var(--steel-500);--text-strong:var(--ink-100);--text-muted:var(--concrete-500);
+--text-faint:var(--concrete-400);--text-inverse:var(--white);
+--line-hairline:rgba(0,0,0,.12);--line-strong:rgba(0,0,0,.28);
+--action-primary-text:var(--white);
+}
+
+/* ═══ Event identities ═══════════════════════════════════════════════
+   The constants across every event are the logo and this palette.
+   Layout is free. Each event owns a primary + a partner, nothing else. */
+:root{
+--event-primary:var(--neon-pink);
+--event-secondary:var(--neon-violet);
+--event-ink:var(--ink-050);
+}
+/* ERROR 404 — flagship. Restraint, chrome, glitch. */
+[data-nof-event="error404"]{
+--event-primary:#ff2e7e;
+--event-secondary:#8b2be2;
+--event-ink:#07070a;
+}
+/* Piano.wav — second series. Cyan, rougher, more party. */
+[data-nof-event="pianowav"]{
+--event-primary:#00e5ff;
+--event-secondary:#4cff3c;
+--event-ink:#07070a;
+}

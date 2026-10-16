@@ -1,0 +1,15 @@
+:root{
+/* 4px base grid; 2px available for hairline insets */
+--space-0:0;--space-1:2px;--space-2:4px;--space-3:8px;--space-4:12px;--space-5:16px;
+--space-6:20px;--space-7:24px;--space-8:32px;--space-9:40px;--space-10:48px;
+--space-11:64px;--space-12:80px;--space-13:104px;--space-14:136px;
+
+/* layout */
+--gutter-mobile:16px;--gutter-tablet:24px;--gutter-desktop:40px;
+--measure-prose:64ch; /* @kind spacing */--container-max:1360px; /* @kind spacing */--container-narrow:880px; /* @kind spacing */
+--rail-width:264px;--header-height:64px;--tabbar-height:56px;
+
+/* control sizing */
+--control-sm:32px;--control-md:40px;--control-lg:48px;--control-xl:56px;
+--hit-min:44px;
+}

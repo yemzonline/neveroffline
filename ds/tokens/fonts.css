@@ -1,0 +1,7 @@
+/* Never Offline webfonts.
+   FLAGGED SUBSTITUTIONS — no original font files were supplied. See readme.md > Typography.
+   · Display  : Anton stands in for the logo's heavy condensed face.
+   · Mono     : JetBrains Mono for the terminal/data register.
+   · Script   : Kaushan Script stands in for the real hand (assets/scrawl-atmos.jpg).
+                Only ever a fallback — real scanned words beat it every time. */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&family=Kaushan+Script&display=swap');

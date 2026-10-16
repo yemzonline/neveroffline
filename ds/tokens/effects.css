@@ -1,0 +1,47 @@
+:root{
+/* radii — mostly square. Pills for status, small radius for cards. */
+--radius-0:0;--radius-sm:2px;--radius-md:4px;--radius-lg:8px;--radius-pill:999px;
+
+/* borders */
+--border-hairline:1px; /* @kind spacing */--border-strong:2px; /* @kind spacing */--border-loud:3px; /* @kind spacing */
+
+/* shadows — physical drop offsets, no soft blur (sticker/print logic) */
+--shadow-sticker:4px 4px 0 var(--ink-000);
+--shadow-sticker-lg:8px 8px 0 var(--ink-000);
+--shadow-card:0 1px 0 rgba(255,255,255,.05) inset,0 12px 32px -16px rgba(0,0,0,.8);
+--shadow-raised:0 18px 48px -24px rgba(0,0,0,.9);
+
+/* neon glows — used sparingly, on the accent element only */
+--glow-pink:0 0 0 1px var(--neon-pink),0 0 18px -2px rgba(255,46,126,.65);
+--glow-cyan:0 0 0 1px var(--neon-cyan),0 0 18px -2px rgba(0,229,255,.6);
+--glow-violet:0 0 0 1px var(--neon-violet),0 0 22px -2px rgba(139,43,226,.6);
+--glow-lime:0 0 0 1px var(--neon-lime),0 0 18px -2px rgba(76,255,60,.55);
+--glow-text-pink:0 0 12px rgba(255,46,126,.55);
+
+/* focus */
+--focus-ring:0 0 0 2px var(--ink-050),0 0 0 4px var(--line-focus); /* @kind other */
+
+/* textures & grounds */
+--texture-scanline:repeating-linear-gradient(180deg,rgba(255,255,255,.045) 0 1px,transparent 1px 3px); /* @kind other */
+--texture-grid:linear-gradient(var(--line-hairline) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,var(--line-hairline) 1px,transparent 1px) 0 0/32px 32px; /* @kind other */
+--texture-hazard:repeating-linear-gradient(135deg,var(--neon-amber) 0 10px,var(--ink-050) 10px 20px); /* @kind other */
+--gradient-protect:linear-gradient(180deg,transparent 0%,rgba(7,7,10,.55) 45%,rgba(7,7,10,.96) 100%); /* @kind other */
+--gradient-neon-edge:linear-gradient(90deg,var(--neon-pink),var(--neon-violet),var(--neon-cyan)); /* @kind other */
+
+/* ── print & repro textures (from the ERROR 404 flyer brief) ─────── */
+--texture-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"); /* @kind other */
+--texture-photocopy:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.42' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); /* @kind other */
+--texture-halftone:radial-gradient(circle,#000 42%,transparent 46%); /* @kind other */
+--halftone-cell:5px; /* @kind spacing */
+--chrome-fill:linear-gradient(178deg,var(--chrome-hi) 0%,var(--concrete-300) 18%,var(--concrete-500) 38%,var(--concrete-100) 52%,var(--chrome-mid) 68%,var(--chrome-lo) 84%,var(--concrete-200) 100%); /* @kind other */
+--riso-offset:9px; /* @kind spacing */
+--grain-opacity-dark:.28; /* @kind other */
+--grain-opacity-paper:.22; /* @kind other */
+
+/* blur */
+--blur-glass:saturate(1.2) blur(14px); /* @kind other */
+--glass-fill:rgba(11,11,16,.72);
+
+/* z */
+--z-base:0; /* @kind other */--z-raised:10; /* @kind other */--z-sticky:100; /* @kind other */--z-overlay:500; /* @kind other */--z-modal:600; /* @kind other */--z-toast:700; /* @kind other */
+}
